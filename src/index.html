@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    
+    <!-- nav -->
+    
+    <section>
+        <div class="h-auto w-screen fixed jet text-gray-300 z-10">
+          <!-- NAVBAR -->
+          <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
+            <!-- CONTAINER -->
+            <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
+              <!-- SVG LOGO - YOU CAN REPLACE THIS -->
+              <div class="flex items-center">
+                  <a href="/">
+                      <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
+                  </a>
+      
+                  <button id="menuBtn" class="absolute right-5 lg:hidden" >
+                      <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
+                          <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                      </svg>
+                  </button>
+    
+              </div>
+              <!-- MENU CONTENT 1 -->
+              <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
+                        pt-24  space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                        lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
+                <!-- DRopdown div -->
+                <div class="relative flex flex-col ">
+                  <a  href="/" class="flex flex-row rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800" >Services  
+                  </a>
+                  <!-- DROP DOWN MENU ONE -->
+                        <div class="hidden lg:px-75 z-50  w-full flex-col rounded-lg bg-white px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] lg:flex-row lg:flex-wrap lg:py-7 lg:shadow-[0_16px_64px_-15px_rgba(45,96,173,0.15)] xl:w-[950px]" >
+                            <!-- ITEM -->
+                            <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                            <!-- ICON -->
+                            <div class="relative">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" fill="#C4C4C4" />
+                                <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                                <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                                </svg>
+                            </div>
+                            <!-- TEXT -->
+                            <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Analytics</h2>
+                            <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Get a better understanding of where your traffic is coming from</p>
+                            </a>
+                            <!-- ITEM -->
+                            <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                            <!-- ICON -->
+                            <div class="relative">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" fill="#C4C4C4" />
+                                <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                                <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                                </svg>
+                            </div>
+                            <!-- TEXT -->
+                            <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Engagement</h2>
+                            <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Speak directly to your customers in a more meaningful way</p>
+                            </a>
+                            <!-- ITEM -->
+                            <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                            <!-- ICON -->
+                            <div class="relative">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" fill="#C4C4C4" />
+                                <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                                <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                                </svg>
+                            </div>
+                            <!-- TEXT -->
+                            <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Automations</h2>
+                            <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Build strategic funnels that will drive your customers to convert</p>
+                            </a>
+                        </div>
+                        </div>
+                <!-- DROP DOWN MENU END -->
+                <a href="/about" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800">About</a>
+                <a href="#" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800">Portfolio</a>
+                <a href="#" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800">Contact</a>
+                <button id="menuCloseBtn" class="lg:hidden ">X</button>
+              </div>
+              <!-- MENU CONTENT 2 -->
+              <div class="lg:block bg-orange-500 px-6 py-3 hidden text-white rounded-md " >
+                <a href="#">Ajánlatot kérek</a>
+              </div>
+              <!-- BURGER MENU -->
+              <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
+                <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
+                    <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                </svg>
+            </button> -->
+            </div>
+          </nav>
+    
+    
+    
+    
+        </div>
+      </section>
+    
+    
+    
+    <!-- nav -->
+
+    <!-- hero -->
+
+
+    <section >
+        <div role='banner' class="bg-cover bg-center bg-no-repeat" style="background-image: url('/images/bg001.jpg')" >
+          <!-- Container -->
+          <div class="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
+            <!-- Component -->
+            <div class="flex min-h-screen flex-col justify-center mx-auto w-full max-w-3xl py-12 md:py-16 lg:py-20 gap-10">
+              <!-- Title -->
+              <div class="flex flex-col items-center gap-y-5 ">
+                    
+                  <h1 class="text-center text-4xl font-bold md:text-6xl test text-orange-500">Jobb Design <br> Jobb eredmények</h1>
+                
+              </div>
+              <!-- Buttons -->
+              <div class="flex flex-wrap items-center justify-center gap-4">
+                <button class="inline-block rounded-md border-4 border-orange-500 bg-orange-500 px-6 py-3 text-center font-semibold text-white">Ajánlatot kérek</button>
+                <button class="inline-block rounded-md border-4 border-orange-500 bg-white px-6 py-3 text-center font-semibold text-orange-500">Esettanulmány</button>
+                
+              </div>
+            </div>
+          </div>
+    </section>
+
+    
+    <!-- hero -->
+
+    <!-- logos -->
+    
+
+    <section class="bg_testamonials">
+        <!--Container -->
+        <div class="bg_testamonials mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+          <!-- Component -->
+          <div class="flex flex-col items-center gap-8 sm:grid sm:grid-cols-3 sm:gap-12 md:grid-cols-5 md:gap-6">
+            <img class="mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a948ffde6cf70_Microsoft%20Logo.svg" alt="" />
+            <img class="mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94ae44e6cf75_PayPal%20Logo.svg" alt="" />
+            <img class="mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9467b4e6cf74_Google%20Logo.svg" alt="" />
+            <img class="mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940c75e6cf67_Chase%20Logo.svg" alt="" />
+            <img class="mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a948d9ce6cf68_Walmart%20Logo.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+
+    
+    <!-- logos -->
+
+
+    <!-- how it works -->
+    
+    <section class="bgv">
+        <!-- Container -->
+        <div class="bgv mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+          <!-- Title -->
+          <div class="flex flex-col items-center text-left">
+            <h2 class="mb-4 text-3xl font-bold md:text-5xl">  <span class="text-orange-500 "> Webfejlesztés </span> Budapestről</h2>
+      
+            <p class="mb-4 mt-4 max-w-xl text-base  md:mb-9 md:text-lg lg:mb-10" >
+              Nem csupán szép weboldalakat készítek, hanem olyanokat, amelyek <span class="text-orange-500">eredmények</span>et hoznak.
+            </p>
+      
+            <p class="mb-4  max-w-xl text-base  md:mb-9 md:text-lg lg:mb-10"  >
+                Az a célom, hogy ügyfeleim vállalkozását előre vigyem ezért elsőként teljes mértékben <span class="text-orange-500">  megismerem az igényeiket és céljaikat </span>.
+                Ezután együttműködve az ügyfelemmel vagy az általa meghatározott iránymutatások szerint, gyönyörű weboldalt építek 
+                alapvető on-page SEO-val, <span class="text-orange-500"> stratégia</span>ilag elhelyezett cselekvésre való felhívásokkal(CTA) és regisztrációs űrlapokkal, hogy a 
+                a <span class="text-orange-500"> weblapra érkezőket </span> leadekké, vásárlókká  <span class="text-orange-500"> konvertáljuk </span>.
+            </p>
+            <p class="mb-4 max-w-xl text-base  md:mb-9 md:text-lg lg:mb-10">
+        
+              A webdesign-től az e-kereskedelemig, a keresőoptimalizálástól a digitális marketingig elkötelezett vagyok ügyfeleim vállalkozásának <span class="text-orange-500"> siker</span>éért."
+      
+            </p>
+          </div>
+          <!-- Features Content -->
+          <div class="grid gap-5  md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6 ">
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="/wordpress-fill.svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M3.32308 12C3.32308 15.4385 5.32308 18.4 8.21538 19.8077L4.07692 8.46923C3.57998 9.57999 3.3231 10.7831 3.32308 12ZM12 20.6769C13.0077 20.6769 13.9769 20.5 14.8846 20.1846L14.8231 20.0692L12.1538 12.7615L9.55385 20.3231C10.3231 20.5538 11.1462 20.6769 12 20.6769ZM13.1923 7.93077L16.3308 17.2615L17.2 14.3692C17.5692 13.1692 17.8538 12.3077 17.8538 11.5615C17.8538 10.4846 17.4692 9.74615 17.1462 9.17692C16.7 8.45385 16.2923 7.84615 16.2923 7.13846C16.2923 6.33846 16.8923 5.6 17.7538 5.6H17.8615C16.2627 4.13224 14.1704 3.31946 12 3.32308C10.5629 3.32281 9.14834 3.67979 7.88347 4.3619C6.61861 5.04402 5.54315 6.02987 4.75385 7.23077L5.30769 7.24615C6.21538 7.24615 7.61539 7.13077 7.61539 7.13077C8.09231 7.10769 8.14615 7.79231 7.67692 7.84615C7.67692 7.84615 7.20769 7.90769 6.67692 7.93077L9.84615 17.3308L11.7462 11.6385L10.3923 7.93077C10.0891 7.91404 9.78636 7.88838 9.48462 7.85385C9.01538 7.82308 9.06923 7.10769 9.53846 7.13077C9.53846 7.13077 10.9692 7.24615 11.8231 7.24615C12.7308 7.24615 14.1308 7.13077 14.1308 7.13077C14.6 7.10769 14.6615 7.79231 14.1923 7.84615C14.1923 7.84615 13.7231 7.9 13.1923 7.93077ZM16.3615 19.5C17.6742 18.7368 18.7636 17.6424 19.5208 16.3263C20.2781 15.0102 20.6767 13.5184 20.6769 12C20.6769 10.4923 20.2923 9.07692 19.6154 7.83846C19.7529 9.20099 19.5466 10.5762 19.0154 11.8385L16.3615 19.5ZM12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22Z"></path></svg>
+              <h3 class="text-xl font-semibold">Webfejlesztés</h3>
+              <p class="text-sm ">A weboldalaim nagy részét a világ legfejlettebb tartalomkezelő rendszerével, 
+                a WordPress-szel építem. Ezen a rendszeren több mint 70 millió weboldal (az összes weboldal 40%-a) alapszik.
+                 Ez biztosítja, hogy ügyfelem egyedi és személyre szabott weboldalt kapjon, amely megfelel 
+                az egyéni igényeinek.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)]  cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M8 3C4.13401 3 1 6.13401 1 10C1 13.866 4.13401 17 8 17H9.07089C9.02417 16.6734 9 16.3395 9 16C9 15.6605 9.02417 15.3266 9.07089 15H8C5.23858 15 3 12.7614 3 10C3 7.23858 5.23858 5 8 5H16C18.7614 5 21 7.23858 21 10C21 10.3428 20.9655 10.6775 20.8998 11.0008C21.4853 11.5748 21.9704 12.2508 22.3264 13C22.7583 12.0907 23 11.0736 23 10C23 6.13401 19.866 3 16 3H8ZM16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13ZM11 16C11 13.2386 13.2386 11 16 11C18.7614 11 21 13.2386 21 16C21 17.0191 20.6951 17.967 20.1716 18.7574L22.7071 21.2929L21.2929 22.7071L18.7574 20.1716C17.967 20.6951 17.0191 21 16 21C13.2386 21 11 18.7614 11 16Z"></path></svg>
+              <h3 class="text-xl font-semibold">SEO</h3>
+              <p class="text-sm ">Amint weboldala már működik, fontos, hogy a Google magasra 
+                rangsorolja azt, így ügyfelei vagy az új érdeklődők könnyen megtalálhassák. Ez minden vállalat célja. 
+                 Azon dolgozok, hogy maximalizáljuk weboldala rangsorolását és hírnevét.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M21 11.6458V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11.6458C2.37764 10.9407 2 10.0144 2 9V3C2 2.44772 2.44772 2 3 2H21C21.5523 2 22 2.44772 22 3V9C22 10.0144 21.6224 10.9407 21 11.6458ZM19 12.874C18.6804 12.9562 18.3453 13 18 13C16.8053 13 15.7329 12.4762 15 11.6458C14.2671 12.4762 13.1947 13 12 13C10.8053 13 9.73294 12.4762 9 11.6458C8.26706 12.4762 7.19469 13 6 13C5.6547 13 5.31962 12.9562 5 12.874V20H19V12.874ZM14 9C14 8.44772 14.4477 8 15 8C15.5523 8 16 8.44772 16 9C16 10.1046 16.8954 11 18 11C19.1046 11 20 10.1046 20 9V4H4V9C4 10.1046 4.89543 11 6 11C7.10457 11 8 10.1046 8 9C8 8.44772 8.44772 8 9 8C9.55228 8 10 8.44772 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9Z"></path></svg>
+              <h3 class="text-xl font-semibold">E-kereskedelem</h3>
+              <p class="text-sm ">Az e-kereskedelem a következő logikus lépés a hagyományos üzletek számára, 
+                akik termékeiket az online piacra szeretnék 
+                vinni. Szerencsére ez a folyamat nem kell, hogy bonyolult vagy túlzottan 
+                költséges legyen.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M5.32894 3.27158C6.56203 2.8332 7.99181 3.10749 8.97878 4.09446C10.0997 5.21537 10.3014 6.90741 9.58382 8.23385L20.2925 18.9437L18.8783 20.3579L8.16933 9.64875C6.84277 10.3669 5.1502 10.1654 4.02903 9.04421C3.04178 8.05696 2.76761 6.62665 3.20652 5.39332L5.44325 7.63C6.02903 8.21578 6.97878 8.21578 7.56457 7.63C8.15035 7.04421 8.15035 6.09446 7.56457 5.50868L5.32894 3.27158ZM15.6963 5.15512L18.8783 3.38736L20.2925 4.80157L18.5247 7.98355L16.757 8.3371L14.6356 10.4584L13.2214 9.04421L15.3427 6.92289L15.6963 5.15512ZM8.97878 13.2868L10.393 14.7011L5.08969 20.0044C4.69917 20.3949 4.066 20.3949 3.67548 20.0044C3.31285 19.6417 3.28695 19.0699 3.59777 18.6774L3.67548 18.5902L8.97878 13.2868Z"></path></svg>
+              <h3 class="text-xl font-semibold">Weboldal karbantartás</h3>
+              <p class="text-sm ">Amint weboldala már működik, valószínűleg azt szeretné, hogy mindig friss, modern, 
+                releváns és ugyanolyan biztonságos legyen, mint amikor elkészült. </p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col sm:col-span-2  justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16 rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path></svg>
+              <h3 class="text-xl font-semibold">White Label Webfejlesztés</h3>
+              <p class="text-sm">"Erősítse meg márkáját a White Label Webfejlesztési szolgáltatásainkkal, 
+                amelyeket a marketing ügynökségeknek, fejlesztő cégeknek és nagyvállalatoknak szenteltünk. Az expert frontend keretrendszerektől
+                 a megbízható backend megoldásokig testre szabott webalkalmazásokat kínálunk, melyek zökkenőmentesen illeszkednek márkájához. 
+                 Bízzon bizalmas munkánkban, megbízhatóságunkban és együttműködő megközelítésünkben egy olyan stratégiai partnerségért, amely 
+                 fokozza képességeit és biztosítja a fenntartható növekedést.</p>
+            </div>
+            <!-- Features Item -->
+            <!-- <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-[#cdcdcd] p-8 md:p-10">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" />
+              <h3 class="text-xl font-semibold">Resource</h3>
+              <p class="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    
+    
+    <!-- how it works -->
+
+    <!-- portfolio -->
+    
+    <section class="bg_portfolio">
+        <!-- Container -->
+        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-300">
+    
+          <!-- <div class="bgv mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200"></div> -->
+          <!-- Component -->
+          <div class="flex flex-col items-stretch">
+            <!-- Title -->
+            <h2 class="mb-8 text-center text-3xl font-bold md:text-5xl"><span class="text-orange-500">Korábbi</span> munkáim</h2>
+            <!-- <p class="mb-20 text-center text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+            <!-- Content -->
+            <div class="gap-x-8 [column-count:1] md:grid-cols-2 md:gap-x-14 md:[column-count:2]">
+              <!-- Item -->
+              <div class="mb-12 inline-block border border-solid border-orange-500 md:mb-8 lg:mb-10">
+                <img src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316262904aee69_Placeholder%20Image%20-%20Landscape.svg" alt="" class="inline-block" />
+                <div class="px-5 py-4">
+                  <h5 class="mb-3 text-xl font-bold">Project name here</h5>
+                  <p class="flex-col text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>
+                  <!-- <div class="mb-5 mt-6 flex flex-wrap gap-2 md:mb-6 lg:mb-8">
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEB DESIGN</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>UI / UX</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEBFLOW</p>
+                    </div>
+                  </div> -->
+                  <div class="flex mt-4 items-center justify-end gap-4">
+                    <a href="#" class="inline-block rounded-md bg-black px-6 py-3 text-center font-semibold text-white">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Item -->
+               <!-- Item -->
+               <div class="mb-12 inline-block border border-solid border-orange-500 md:mb-8 lg:mb-10">
+                <img src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" alt="" class="inline-block" />
+                <div class="px-5 py-4">
+                  <h5 class="mb-3 text-xl font-bold">Project name here</h5>
+                  <p class="flex-col text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>
+                  <!-- <div class="mb-5 mt-6 flex flex-wrap gap-2 md:mb-6 lg:mb-8">
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEB DESIGN</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>UI / UX</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEBFLOW</p>
+                    </div>
+                  </div> -->
+                  <div class="flex mt-4 items-center justify-end gap-4">
+                    <a href="#" class="inline-block rounded-md bg-black px-6 py-3 text-center font-semibold text-white">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Item -->
+               <!-- Item -->
+               <div class="mb-12 inline-block border border-solid border-orange-500 md:mb-8 lg:mb-10">
+                <img src="https://assets.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg" alt="" class="inline-block" />
+                <div class="px-5 py-4">
+                  <h5 class="mb-3 text-xl font-bold">Project name here</h5>
+                  <p class="flex-col text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna</p>
+                  <!-- <div class="mb-5 mt-6 flex flex-wrap gap-2 md:mb-6 lg:mb-8">
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEB DESIGN</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>UI / UX</p>
+                    </div>
+                    <div class="rounded-sm bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#636262]">
+                      <p>WEBFLOW</p>
+                    </div>
+                  </div> -->
+                  <div class="flex mt-4 items-center justify-end gap-4">
+                    <a href="#" class="inline-block rounded-md bg-black px-6 py-3 text-center font-semibold text-white">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Item -->
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- portfolio -->
+
+    <!-- testamonials -->
+    
+    <section class="block  bg_testamonials">
+        <!-- Container -->
+        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+          <!-- Heading -->
+          <h2 class="mx-auto mb-8 max-w-3xl text-center text-3xl font-bold md:mb-12 md:text-5xl lg:mb-16"> <span class="text-orange-500">Ügyfeleim</span> mondták</h2>
+          <!-- Contents -->
+          <div class="mb-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:mb-8">
+            <!-- Content 1 -->
+            <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-[#cdcdcd] bg-white p-8 md:p-10">
+              <div class="flex">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+              </div>
+              <div class="text-[#636262]">“Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis"</div>
+              <div class="flex flex-row items-start">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="mr-4 inline-block h-16 w-16 object-cover" />
+                <div class="flex flex-col items-start">
+                  <h6 class="text-base font-bold">Laila Bahar</h6>
+                  <p class="text-sm text-[#636262] sm:text-sm">Designer</p>
+                </div>
+              </div>
+            </div>
+            <!-- Content 2 -->
+            <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-[#cdcdcd] bg-white p-8 md:p-10">
+              <div class="flex">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+              </div>
+              <div class="text-[#636262]">“Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis"</div>
+              <div class="flex flex-row items-start">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="mr-4 inline-block h-16 w-16 object-cover" />
+                <div class="flex flex-col items-start">
+                  <h6 class="text-base font-bold">Laila Bahar</h6>
+                  <p class="text-sm text-[#636262] sm:text-sm">Designer</p>
+                </div>
+              </div>
+            </div>
+            <!-- Content 3 -->
+            <div class="grid grid-cols-1 gap-6 rounded-md border border-solid border-[#cdcdcd] bg-white p-8 md:p-10">
+              <div class="flex">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="mr-1 inline-block w-3.5 flex-none" />
+              </div>
+              <div class="text-[#636262]">“Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis"</div>
+              <div class="flex flex-row items-start">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="mr-4 inline-block h-16 w-16 object-cover" />
+                <div class="flex flex-col items-start">
+                  <h6 class="text-base font-bold">Laila Bahar</h6>
+                  <p class="text-sm text-[#636262] sm:text-sm">Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Text Button -->
+          <!-- <div class="flex flex-col">
+            <a href="#" class="mx-auto font-bold text-black">Check all reviews</a>
+          </div> -->
+        </div>
+      </section>
+    
+    <!-- testamonials -->
+
+    <!-- why me -->
+    
+    <section class="bgv">
+        <!-- Container -->
+        <div class="bgv mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+          <!-- Title -->
+          <div class="flex flex-col items-center text-left">
+            <h2 class="mb-4 text-3xl font-bold md:text-5xl">  <span class="text-orange-500 "> Miért </span> én</h2>
+      
+            <p class="mb-4 mt-4 max-w-xl text-base  md:mb-9 md:text-lg lg:mb-10" >
+              Nekem a vállalkozásod nem csak egy szám.
+               Minden ügyfelemet és projektemet maximális odaadással kezelem, és célom mindig az, hogy minden ügyfelem számára a legjobb eredményt biztosítsam.
+            </p>
+      
+            
+            
+          </div>
+          <!-- Features Content -->
+          <div class="grid gap-5  md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6 ">
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="/wordpress-fill.svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M3.32308 12C3.32308 15.4385 5.32308 18.4 8.21538 19.8077L4.07692 8.46923C3.57998 9.57999 3.3231 10.7831 3.32308 12ZM12 20.6769C13.0077 20.6769 13.9769 20.5 14.8846 20.1846L14.8231 20.0692L12.1538 12.7615L9.55385 20.3231C10.3231 20.5538 11.1462 20.6769 12 20.6769ZM13.1923 7.93077L16.3308 17.2615L17.2 14.3692C17.5692 13.1692 17.8538 12.3077 17.8538 11.5615C17.8538 10.4846 17.4692 9.74615 17.1462 9.17692C16.7 8.45385 16.2923 7.84615 16.2923 7.13846C16.2923 6.33846 16.8923 5.6 17.7538 5.6H17.8615C16.2627 4.13224 14.1704 3.31946 12 3.32308C10.5629 3.32281 9.14834 3.67979 7.88347 4.3619C6.61861 5.04402 5.54315 6.02987 4.75385 7.23077L5.30769 7.24615C6.21538 7.24615 7.61539 7.13077 7.61539 7.13077C8.09231 7.10769 8.14615 7.79231 7.67692 7.84615C7.67692 7.84615 7.20769 7.90769 6.67692 7.93077L9.84615 17.3308L11.7462 11.6385L10.3923 7.93077C10.0891 7.91404 9.78636 7.88838 9.48462 7.85385C9.01538 7.82308 9.06923 7.10769 9.53846 7.13077C9.53846 7.13077 10.9692 7.24615 11.8231 7.24615C12.7308 7.24615 14.1308 7.13077 14.1308 7.13077C14.6 7.10769 14.6615 7.79231 14.1923 7.84615C14.1923 7.84615 13.7231 7.9 13.1923 7.93077ZM16.3615 19.5C17.6742 18.7368 18.7636 17.6424 19.5208 16.3263C20.2781 15.0102 20.6767 13.5184 20.6769 12C20.6769 10.4923 20.2923 9.07692 19.6154 7.83846C19.7529 9.20099 19.5466 10.5762 19.0154 11.8385L16.3615 19.5ZM12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C14.6522 2 17.1957 3.05357 19.0711 4.92893C20.9464 6.8043 22 9.34784 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22Z"></path></svg>
+              <h3 class="text-xl font-semibold">Webfejlesztés</h3>
+              <p class="text-sm ">A weboldalaim nagy részét a világ legfejlettebb tartalomkezelő rendszerével, 
+                a WordPress-szel építem. Ezen a rendszeren több mint 70 millió weboldal (az összes weboldal 40%-a) alapszik.
+                 Ez biztosítja, hogy ügyfelem egyedi és személyre szabott weboldalt kapjon, amely megfelel 
+                az egyéni igényeinek.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)]  cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M8 3C4.13401 3 1 6.13401 1 10C1 13.866 4.13401 17 8 17H9.07089C9.02417 16.6734 9 16.3395 9 16C9 15.6605 9.02417 15.3266 9.07089 15H8C5.23858 15 3 12.7614 3 10C3 7.23858 5.23858 5 8 5H16C18.7614 5 21 7.23858 21 10C21 10.3428 20.9655 10.6775 20.8998 11.0008C21.4853 11.5748 21.9704 12.2508 22.3264 13C22.7583 12.0907 23 11.0736 23 10C23 6.13401 19.866 3 16 3H8ZM16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13ZM11 16C11 13.2386 13.2386 11 16 11C18.7614 11 21 13.2386 21 16C21 17.0191 20.6951 17.967 20.1716 18.7574L22.7071 21.2929L21.2929 22.7071L18.7574 20.1716C17.967 20.6951 17.0191 21 16 21C13.2386 21 11 18.7614 11 16Z"></path></svg>
+              <h3 class="text-xl font-semibold">SEO</h3>
+              <p class="text-sm ">Amint weboldala már működik, fontos, hogy a Google magasra 
+                rangsorolja azt, így ügyfelei vagy az új érdeklődők könnyen megtalálhassák. Ez minden vállalat célja. 
+                 Azon dolgozok, hogy maximalizáljuk weboldala rangsorolását és hírnevét.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M21 11.6458V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11.6458C2.37764 10.9407 2 10.0144 2 9V3C2 2.44772 2.44772 2 3 2H21C21.5523 2 22 2.44772 22 3V9C22 10.0144 21.6224 10.9407 21 11.6458ZM19 12.874C18.6804 12.9562 18.3453 13 18 13C16.8053 13 15.7329 12.4762 15 11.6458C14.2671 12.4762 13.1947 13 12 13C10.8053 13 9.73294 12.4762 9 11.6458C8.26706 12.4762 7.19469 13 6 13C5.6547 13 5.31962 12.9562 5 12.874V20H19V12.874ZM14 9C14 8.44772 14.4477 8 15 8C15.5523 8 16 8.44772 16 9C16 10.1046 16.8954 11 18 11C19.1046 11 20 10.1046 20 9V4H4V9C4 10.1046 4.89543 11 6 11C7.10457 11 8 10.1046 8 9C8 8.44772 8.44772 8 9 8C9.55228 8 10 8.44772 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9Z"></path></svg>
+              <h3 class="text-xl font-semibold">E-kereskedelem</h3>
+              <p class="text-sm ">Az e-kereskedelem a következő logikus lépés a hagyományos üzletek számára, 
+                akik termékeiket az online piacra szeretnék 
+                vinni. Szerencsére ez a folyamat nem kell, hogy bonyolult vagy túlzottan 
+                költséges legyen.</p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16  rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M5.32894 3.27158C6.56203 2.8332 7.99181 3.10749 8.97878 4.09446C10.0997 5.21537 10.3014 6.90741 9.58382 8.23385L20.2925 18.9437L18.8783 20.3579L8.16933 9.64875C6.84277 10.3669 5.1502 10.1654 4.02903 9.04421C3.04178 8.05696 2.76761 6.62665 3.20652 5.39332L5.44325 7.63C6.02903 8.21578 6.97878 8.21578 7.56457 7.63C8.15035 7.04421 8.15035 6.09446 7.56457 5.50868L5.32894 3.27158ZM15.6963 5.15512L18.8783 3.38736L20.2925 4.80157L18.5247 7.98355L16.757 8.3371L14.6356 10.4584L13.2214 9.04421L15.3427 6.92289L15.6963 5.15512ZM8.97878 13.2868L10.393 14.7011L5.08969 20.0044C4.69917 20.3949 4.066 20.3949 3.67548 20.0044C3.31285 19.6417 3.28695 19.0699 3.59777 18.6774L3.67548 18.5902L8.97878 13.2868Z"></path></svg>
+              <h3 class="text-xl font-semibold">Weboldal karbantartás</h3>
+              <p class="text-sm ">Amint weboldala már működik, valószínűleg azt szeretné, hogy mindig friss, modern, 
+                releváns és ugyanolyan biztonságos legyen, mint amikor elkészült. </p>
+            </div>
+            <!-- Features Item -->
+            <div class="flex flex-col sm:col-span-2  justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)] cursor-pointer">
+              <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
+              <svg class="inline-block h-16 rounded-full"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path></svg>
+              <h3 class="text-xl font-semibold">White Label Webfejlesztés</h3>
+              <p class="text-sm">"Erősítse meg márkáját a White Label Webfejlesztési szolgáltatásainkkal, 
+                amelyeket a marketing ügynökségeknek, fejlesztő cégeknek és nagyvállalatoknak szenteltünk. Az expert frontend keretrendszerektől
+                 a megbízható backend megoldásokig testre szabott webalkalmazásokat kínálunk, melyek zökkenőmentesen illeszkednek márkájához. 
+                 Bízzon bizalmas munkánkban, megbízhatóságunkban és együttműködő megközelítésünkben egy olyan stratégiai partnerségért, amely 
+                 fokozza képességeit és biztosítja a fenntartható növekedést.</p>
+            </div>
+            <!-- Features Item -->
+            <!-- <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-[#cdcdcd] p-8 md:p-10">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" />
+              <h3 class="text-xl font-semibold">Resource</h3>
+              <p class="text-sm text-[#636262]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit.</p>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    
+    <!-- why me -->
+
+    <!-- footer -->
+    
+    <footer class="block bg_portfolio">
+        <!-- Container -->
+        <div class="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10"><!-- Component -->
+          <div class="flex-col flex items-center">
+            <a href="#" class="mb-8 inline-block max-w-full text-black">
+              <img src="/logo.png" alt="" class="inline-block max-h-24">
+            </a>
+            <div class="text-center font-semibold max-[991px]: max-[991px]:py-1">
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-[#d6a701]">About</a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-[#d6a701]">Features</a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-[#d6a701]">Works</a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-[#d6a701]">Support</a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-[#d6a701]">Help</a>
+            </div>
+            <div class="mb-8 mt-8 [border-bottom:1px_solid_rgb(0,_0,_0)] w-48">
+            </div>
+            <div class="mb-12 grid-cols-4 grid-flow-col grid w-full max-w-[208px] gap-3">
+              <a href="#" class="mx-auto flex-col flex max-w-[24px] items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945b4ae6cf7b_Vector-1.svg" alt="" class="inline-block">
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-[24px] items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945560e6cf77_Vector.svg" alt="" class="inline-block">
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-[24px] items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940535e6cf7a_Vector-3.svg" alt="" class="inline-block">
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-[24px] items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9433a9e6cf88_Vector-2.svg" alt="" class="inline-block">
+              </a>
+            </div>
+            <p class="max-[479px]:text-sm">© Copyright {currentYear}. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- footer -->
+
+</body>
+</html>

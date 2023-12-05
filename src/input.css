@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.jet{
+    background-color: #2E2E2E;
+}
+.bgv{
+    background-color: rgb(47, 47, 47);
+}
+
+.bg_testamonials{
+    background-color:  rgb(68,68,68);
+}
+
+.bg_portfolio{
+    /* background-color: rgb(34,34,34); */
+    background-color: #222222;
+  }
