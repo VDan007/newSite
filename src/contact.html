@@ -120,47 +120,83 @@
     <!-- contact -->
     
     
-<section class="jet">
+<section class="jet pt-3">
     <!-- Container -->
-    <div class="mx-auto max-w-7xl px-5 py-16 text-center md:px-10 md:py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-5 py-20 text-center md:px-10 md:py-30 lg:py-40 text-gray-200">
       <!-- Component -->
       <h2 class="text-orange-500 text-3xl font-bold md:text-5xl">Kapcsolat</h2>
       <p class="mx-auto mb-8 mt-4 max-w-lg text-[#636262] md:mb-12 lg:mb-16">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam,purus sit amet luctus magna fringilla urna</p>
       <!-- Form -->
       <form name="wf-form-name" method="get" class="mx-auto mb-4 text-left sm:px-4 md:px-20">
-        <div class="mb-4 grid w-full grid-cols-2 gap-6">
+        <div class="mb-4 grid w-full grid-cols-1 gap-6">
           <div>
-            <label for="name-2" class="mb-1 font-medium">First Name</label>
-            <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]" placeholder="" required="" />
+            <label for="name-2" class="mb-1 font-medium">Név</label>
+            <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-orange-500 bg-transparent px-3 py-6 text-sm text-gray-200" placeholder="Ide írd a neved" required="" />
           </div>
-          <div>
+          <!-- <div>
             <label for="name-3" class="mb-1 font-medium">Last Name</label>
             <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]" placeholder="" required="" />
-          </div>
+          </div> -->
         </div>
         <div class="mb-4">
-          <label for="field" class="mb-1 font-medium">Company Website</label>
-          <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]" />
+          <label for="field" class="mb-1 font-medium">Telefonszám</label>
+          <input type="tel" class="mb-4 block h-9 w-full rounded-md border border-solid border-orange-500 bg-transparent px-3 py-6 text-sm text-gray-200" placeholder="Ide írd a telefonszámod"/>
         </div>
         <div class="mb-4">
           <label for="field" class="mb-1 font-medium">Email</label>
-          <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 text-sm text-[#333333]" />
+          <input type="text" class="mb-4 block h-9 w-full rounded-md border border-solid border-orange-500 bg-transparent px-3 py-6 text-sm text-gray-200" placeholder="Ide írd az e-mail címed"/>
         </div>
         <div class="mb-5 md:mb-6 lg:mb-8">
-          <label for="field" class="mb-1 font-medium">Message</label>
-          <textarea placeholder="" maxlength="5000" name="field" class="mb-2.5 block h-auto min-h-[186px] w-full rounded-md border border-solid border-black px-3 py-2 text-sm text-[#333333]"> </textarea>
+          <label for="field" class="mb-1 font-medium">Üzenet</label>
+          <textarea   maxlength="5000" name="field" class="mb-2.5 block h-auto min-h-[186px] w-full rounded-md border border-solid border-orange-500 bg-transparent px-3 py-2 text-sm text-gray-200 "placeholder="ide írd az üzenetet"></textarea>
         </div>
-        <label class="font-mediume mb-1 flex items-center justify-start pb-4 pl-5">
+        <!-- <label class="font-mediume mb-1 flex items-center justify-start pb-4 pl-5">
           <input type="checkbox" name="checkbox-2" class="-ml-[20px] mt-1" />
           <span class="ml-4 inline-block cursor-pointer text-sm" for="checkbox-2">By selecting this, you agree to the<a href="#"> Privacy Policy</a>
           </span>
-        </label>
-        <input type="submit" value="Join Flowspark" class="inline-block w-full cursor-pointer bg-black px-6 py-3 text-center font-semibold text-white" />
+        </label> -->
+        <input type="submit" value="Mehet" class="inline-block w-full cursor-pointer rounded-md bg-orange-500 border-2 border-orange-500 hover:bg-white hover:text-orange-500 px-6 py-3 text-center font-semibold text-white" />
       </form>
     </div>
   </section>
     
     <!-- contact -->
+
+    <!-- footer -->
+    
+    <footer class="block bg_portfolio">
+      <!-- Container -->
+      <div class="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10 text-gray-200"><!-- Component -->
+        <div class="flex-col flex items-center">
+          <a href="#" class="mb-8 inline-block max-w-full text-black">
+            <img src="/images/logo.png" alt="" class="inline-block max-h-24">
+          </a>
+          <div class="text-center font-semibold max-[991px]: max-[991px]:py-1">
+            <a href="services.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Szolgáltatásaim</a>
+            <a href="about.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Rólam</a>
+            <a href="portfolio.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Portfólió</a>
+            <a href="contact.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Kapcsolat</a>
+            <!-- <a href="#" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Help</a> -->
+          </div>
+          <div class="mb-8 mt-8 border-b border-orange-500 w-48">
+          </div>
+          <div class="mb-12 flex justify-center w-full max-w-[208px] gap-4">
+            <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+              <img src="/images/facebook-circle-fill.png" alt="" class="inline-block">
+            </a>
+            <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+              <img src="/images/linkedin-box-line.png" alt="" class="inline-block">
+            </a>
+
+            
+            
+          </div>
+          <p class="max-[479px]:text-sm" id="footer_year">.</p>
+        </div>
+      </div>
+    </footer>
+  
+  <!-- footer -->
 
 
 </body>

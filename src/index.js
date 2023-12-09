@@ -1,6 +1,10 @@
 const menuContent = document.getElementById('menuContent');
 const menuBtn = document.getElementById('menuBtn');
 const menuCLoseBtn = document.getElementById('menuCloseBtn');
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const currentYearDisplay = document.getElementById('footer_year');
+currentYearDisplay.textContent = `${currentYear} Varjaskéri Dániel` 
 
 
 let isMenuOpen = false;
