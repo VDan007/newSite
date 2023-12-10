@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Jobb Design, job eredmények. Webfejlesztés eredményorientáltan. Professzionális webfejlesztés és SEO.">
+    <title>Dániel Varjaskéri</title>
     <link href="/dist/output.css" rel="stylesheet">
     <script defer src="index.js"></script>
 </head>
@@ -32,11 +33,11 @@
               </div>
               <!-- MENU CONTENT 1 -->
               <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
-                        pt-24  space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                        pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
                         lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
                 <!-- DRopdown div -->
                 <div class="relative flex flex-col ">
-                  <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   lg:hover:text-orange-500" >Szolgáltatásaim
+                  <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500" >Szolgáltatásaim
                   </a>
                   <!-- DROP DOWN MENU ONE -->
                         <div class="hidden lg:px-75 z-50  w-full flex-col rounded-lg bg-white px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] lg:flex-row lg:flex-wrap lg:py-7 lg:shadow-[0_16px_64px_-15px_rgba(45,96,173,0.15)] xl:w-[950px]" >
@@ -85,14 +86,14 @@
                         </div>
                         </div>
                 <!-- DROP DOWN MENU END -->
-                <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:text-orange-500">Rólam</a>
-                <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:text-orange-500">Portfolió</a>
-                <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 lg:hover:text-orange-500">Kapcsolat</a>
-                <button id="menuCloseBtn" class="lg:hidden ">X</button>
+                <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
+                <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
+                <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
+                <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
               </div>
               <!-- MENU CONTENT 2 -->
               <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
-                <a href="#">Ajánlatot kérek</a>
+                <a href="contact.html">Ajánlatot kérek</a>
               </div>
               <!-- BURGER MENU -->
               <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
@@ -130,8 +131,8 @@
               </div>
               <!-- Buttons -->
               <div class="flex flex-wrap items-center justify-center gap-4">
-                <button class="border-2 border-orange-500 bg-orange-500 px-6 py-3  text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-orange-500 hover:border-2">Kezdjük</button>
-                <button class="border-2 border-orange-500 bg-orange-500 px-6 py-3  text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-orange-500 hover:border-2">Esettanulmány</button>
+                <a href="contact.html" class="border-2 border-orange-500 bg-orange-500 px-6 py-3  text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-orange-500 hover:border-2">Kezdjük</a>
+                <!-- <button class="border-2 border-orange-500 bg-orange-500 px-6 py-3  text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-orange-500 hover:border-2">Esettanulmány</button> -->
                 
               </div>
             </div>
@@ -170,7 +171,7 @@
         <div class="bgv mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
           <!-- Title -->
           <div class="flex flex-col items-center text-left">
-            <h2 class="mb-4 text-3xl font-bold md:text-5xl">  <span class="text-orange-500 "> Webfejlesztés </span> Budapestről</h2>
+            <h1 class="mb-4 text-3xl font-bold md:text-5xl text-center">   <span class="text-orange-500 "> Webfejlesztés</span> </br>  Eredményorientáltan</h1>
       
             <p class="mb-4 mt-4 max-w-xl text-base  md:mb-9 md:text-lg lg:mb-10" >
               Nem csupán szép weboldalakat készítek, hanem olyanokat, amelyek <span class="text-orange-500">eredmények</span>et hoznak.
@@ -453,7 +454,7 @@
             <!-- Features Item -->
             <div class="flex flex-col justify-start items-start gap-6 rounded-md border border-solid border-orange-500 p-8 md:p-10 transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[0_35px_60px_-15px_rgba(245,158,11,0.3)]  cursor-pointer">
               <!-- <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945e53e6cf8f_Ellipse%2011%20(1).svg" alt="" class="inline-block h-16" /> -->
-              <svg class="inline-block h-16 rounded-full"   viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M5.45455 15L1 18.5V3C1 2.44772 1.44772 2 2 2H17C17.5523 2 18 2.44772 18 3V15H5.45455ZM4.76282 13H16V4H3V14.3851L4.76282 13ZM8 17H18.2372L20 18.3851V8H21C21.5523 8 22 8.44772 22 9V22.5L17.5455 19H9C8.44772 19 8 18.5523 8 18V17Z"></path></svg>
+              <svg class="inline-block h-16 "   viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M5.45455 15L1 18.5V3C1 2.44772 1.44772 2 2 2H17C17.5523 2 18 2.44772 18 3V15H5.45455ZM4.76282 13H16V4H3V14.3851L4.76282 13ZM8 17H18.2372L20 18.3851V8H21C21.5523 8 22 8.44772 22 9V22.5L17.5455 19H9C8.44772 19 8 18.5523 8 18V17Z"></path></svg>
               <h3 class="text-xl font-semibold">Kommunikáció</h3>
               <p class="text-sm ">Amikor keresel, elérsz. Figyelek arra, amit szeretnél.
                 Ha valami nem tetszik, változtatunk.
