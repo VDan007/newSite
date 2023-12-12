@@ -26,5 +26,6 @@ function hide(){
 function toggleMenu(){
     isMenuOpen = !isMenuOpen;
     isMenuOpen ? makeVisible() : hide(); 
+    console.log('works');
 }
 
