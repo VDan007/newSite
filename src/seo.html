@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    
+    <!-- nav -->
+    
+  <section>
+    <div class="h-auto w-screen fixed jet text-gray-200 z-10 ">
+      <!-- NAVBAR -->
+      <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
+        <!-- CONTAINER -->
+        <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
+          <!-- SVG LOGO - YOU CAN REPLACE THIS -->
+          <div class="flex items-center">
+              <a href="index.html">
+                  <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
+              </a>
+  
+              <button id="menuBtn" class="absolute right-5 lg:hidden" >
+                  <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
+                      <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                  </svg>
+              </button>
+
+          </div>
+          <!-- MENU CONTENT 1 -->
+          <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
+                    pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                    lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
+            <!-- DRopdown div -->
+            <div class="relative flex flex-col ">
+              <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500" >Szolgáltatásaim
+              </a>
+              <!-- DROP DOWN MENU ONE -->
+                    <div class="hidden lg:px-75 z-50  w-full flex-col rounded-lg bg-white px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] lg:flex-row lg:flex-wrap lg:py-7 lg:shadow-[0_16px_64px_-15px_rgba(45,96,173,0.15)] xl:w-[950px]" >
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Analytics</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Get a better understanding of where your traffic is coming from</p>
+                        </a>
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Engagement</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Speak directly to your customers in a more meaningful way</p>
+                        </a>
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Automations</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Build strategic funnels that will drive your customers to convert</p>
+                        </a>
+                    </div>
+                    </div>
+            <!-- DROP DOWN MENU END -->
+            <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
+            <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
+            <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
+            <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
+          </div>
+          <!-- MENU CONTENT 2 -->
+          <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
+            <a href="contact.html">Ajánlatot kérek</a>
+          </div>
+          <!-- BURGER MENU -->
+          <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
+            <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
+                <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+            </svg>
+        </button> -->
+        </div>
+      </nav>
+
+
+
+
+    </div>
+  </section>
+
+
+
+<!-- nav -->
+
+
+<!-- header -->
+
+
+<section class="pt-3 bgv">
+  <!-- Container -->
+  <div class=" mx-auto w-full max-w-7xl px-5 pt-20 md:px-10 md:pt-30 lg:pt-40  text-gray-200">
+    <!-- Component -->
+    <div class="flex flex-col items-start gap-8 sm:gap-20 lg:flex-row lg:items-center">
+      <div class="lg:w-1/2">
+        <h1 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">SEO</h1>
+        <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">A keresőmotor-optimalizálás (SEO) egy átfogó kifejezés, 
+            amely számos aspektust foglal magában a webhely láthatóságának és rangsorolásának javítása érdekében a 
+            keresőmotor-eredménylistákon.</p>
+        <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+      </div>
+      <!-- <div class="lg:w-1/2">
+        <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- header -->
+
+
+<!--content -->
+
+
+<section class="bg_portfolio">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Több weboldal látogató</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">Amikor webhelyed magasabb rangsorba kerül a keresési eredmények 
+            között, nagyobb organikus forgalmat vonz. Nagyobb forgalom, több ügyfél/eladás.</p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0" viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M15.5018 20.0048C14.8432 21.5841 13.5794 22.848 12 23.5066C10.4206 22.848 9.15679 21.5841 8.49816 20.0048H10.7575C11.0838 20.4934 11.5051 20.9171 12 21.248C12.4949 20.9171 12.9162 20.4934 13.2425 20.0048H15.5018ZM18 14.8095L20 17.0777V19.0048H4V17.0777L6 14.8095V9.00478C6 5.52153 8.50442 2.55822 12 1.45999C15.4956 2.55822 18 5.52153 18 9.00478V14.8095ZM17.2692 17.0048L16 15.5653V9.00478C16 6.68694 14.4292 4.57431 12 3.58384C9.57078 4.57431 8 6.68694 8 9.00478V15.5653L6.73076 17.0048H17.2692ZM12 11.0048C10.8954 11.0048 10 10.1093 10 9.00478C10 7.90021 10.8954 7.00478 12 7.00478C13.1046 7.00478 14 7.90021 14 9.00478C14 10.1093 13.1046 11.0048 12 11.0048Z"></path></svg>
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+<!--content -->
+
+
+<section class="bg_testamonials">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Költséghatékony</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">A fizetett hirdetésekkel ellentétben az SEO költséghatékony módja a
+             forgalom vonzásának, amely csökkenti a marketingköltségeket és fenntartható eredményeket biztosít.</p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM12.0049 20.0027C16.4232 20.0027 20.0049 16.421 20.0049 12.0027C20.0049 7.58447 16.4232 4.00275 12.0049 4.00275C7.5866 4.00275 4.00488 7.58447 4.00488 12.0027C4.00488 16.421 7.5866 20.0027 12.0049 20.0027ZM8.50488 14.0027H14.0049C14.281 14.0027 14.5049 13.7789 14.5049 13.5027C14.5049 13.2266 14.281 13.0027 14.0049 13.0027H10.0049C8.62417 13.0027 7.50488 11.8835 7.50488 10.5027C7.50488 9.12203 8.62417 8.00275 10.0049 8.00275H11.0049V6.00275H13.0049V8.00275H15.5049V10.0027H10.0049C9.72874 10.0027 9.50488 10.2266 9.50488 10.5027C9.50488 10.7789 9.72874 11.0027 10.0049 11.0027H14.0049C15.3856 11.0027 16.5049 12.122 16.5049 13.5027C16.5049 14.8835 15.3856 16.0027 14.0049 16.0027H13.0049V18.0027H11.0049V16.0027H8.50488V14.0027Z"></path></svg>
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+
+<section class="bg_portfolio">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Versenyelőny</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">Ki ne szeretne a konkurencia előtt megjelenni a találatok között?</p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)"  d="M2.00488 19H22.0049V21H2.00488V19ZM2.00488 5L7.00488 8.5L12.0049 2L17.0049 8.5L22.0049 5V17H2.00488V5ZM4.00488 8.84131V15H20.0049V8.84131L16.5854 11.2349L12.0049 5.28024L7.42435 11.2349L4.00488 8.84131Z"></path></svg>
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- content -->
+<!--content -->
+
+
+<section class="bg_testamonials">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Hosszútávú eredmények</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">Más rövid távú marketingstratégiáktól eltérően az SEO előnyei hosszú távúak.
+             Ha egyszer be van állítva, egy jól optimalizált webhely hosszú ideig fenntarthatja magas pozícióját.</p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)"  d="M4 2H20V6.45994L13.5366 12L20 17.5401V22H4V17.5401L10.4634 12L4 6.45994V2ZM12 10.6829L18 5.54007V4H6V5.54007L12 10.6829ZM12 13.3171L6 18.4599V20H18V18.4599L12 13.3171Z"></path></svg>
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- content -->
+
+
+
+
+
+<!-- footer -->
+    
+<footer class="block bg_portfolio">
+    <!-- Container -->
+    <div class="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10 text-gray-200"><!-- Component -->
+      <div class="flex-col flex items-center">
+        <a href="#" class="mb-8 inline-block max-w-full text-black">
+          <img src="/images/logo.png" alt="" class="inline-block max-h-24">
+        </a>
+        <div class="text-center font-semibold max-[991px]: max-[991px]:py-1">
+          <a href="services.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Szolgáltatásaim</a>
+          <a href="about.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Rólam</a>
+          <a href="portfolio.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Portfólió</a>
+          <a href="contact.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Kapcsolat</a>
+          <!-- <a href="#" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Help</a> -->
+        </div>
+        <div class="mb-8 mt-8 border-b border-orange-500 w-48">
+        </div>
+        <div class="mb-12 flex justify-center w-full max-w-[208px] gap-4">
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/facebook-circle-fill.png" alt="" class="inline-block">
+          </a>
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/linkedin-box-line.png" alt="" class="inline-block">
+          </a>
+
+          
+          
+        </div>
+        <p class="max-[479px]:text-sm" id="footer_year">.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- footer -->
+
+
+</body>
+</html>
