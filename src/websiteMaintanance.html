@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+
+     <!-- nav -->
+    
+  <section>
+    <div class="h-auto w-screen fixed jet text-gray-200 z-10 ">
+      <!-- NAVBAR -->
+      <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
+        <!-- CONTAINER -->
+        <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
+          <!-- SVG LOGO - YOU CAN REPLACE THIS -->
+          <div class="flex items-center">
+              <a href="index.html">
+                  <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
+              </a>
+  
+              <button id="menuBtn" class="absolute right-5 lg:hidden" >
+                  <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
+                      <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                  </svg>
+              </button>
+
+          </div>
+          <!-- MENU CONTENT 1 -->
+          <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
+                    pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                    lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
+            <!-- DRopdown div -->
+            <div class="relative flex flex-col ">
+              <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500" >Szolgáltatásaim
+              </a>
+              <!-- DROP DOWN MENU ONE -->
+                    <div class="hidden lg:px-75 z-50  w-full flex-col rounded-lg bg-white px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] lg:flex-row lg:flex-wrap lg:py-7 lg:shadow-[0_16px_64px_-15px_rgba(45,96,173,0.15)] xl:w-[950px]" >
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Analytics</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Get a better understanding of where your traffic is coming from</p>
+                        </a>
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Engagement</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Speak directly to your customers in a more meaningful way</p>
+                        </a>
+                        <!-- ITEM -->
+                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
+                        <!-- ICON -->
+                        <div class="relative">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" fill="#C4C4C4" />
+                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
+                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
+                            </svg>
+                        </div>
+                        <!-- TEXT -->
+                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Automations</h2>
+                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Build strategic funnels that will drive your customers to convert</p>
+                        </a>
+                    </div>
+                    </div>
+            <!-- DROP DOWN MENU END -->
+            <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
+            <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
+            <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
+            <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
+          </div>
+          <!-- MENU CONTENT 2 -->
+          <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
+            <a href="contact.html">Ajánlatot kérek</a>
+          </div>
+          <!-- BURGER MENU -->
+          <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
+            <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
+                <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+            </svg>
+        </button> -->
+        </div>
+      </nav>
+
+
+
+
+    </div>
+  </section>
+
+
+
+<!-- nav -->
+
+
+
+<!-- header -->
+
+<section class="pt-3 bgv">
+    <!-- Container -->
+    <div class=" mx-auto w-full max-w-7xl px-5 pt-20 md:px-10 md:pt-30 lg:pt-40  text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col items-start gap-8 sm:gap-20 lg:flex-row lg:items-center">
+        <div class="lg:w-1/2">
+          <h1 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Weboldal Karbantartás</h1>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">A weboldalad mindíg úgy néz ki és
+            úgy működik, ahogy kell.
+          </p>
+          <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+        </div>
+        <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+<!-- header -->
+    
+
+<!--content -->
+
+
+<section class="bg_testamonials">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Biztonság</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">Rendszeres webhely karbantartás segít azonosítani és kezelni a biztonsági réseket.
+         </p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)"  d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598ZM5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879L5 4.60434Z"></path></svg>
+          
+         
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+<!--content -->
+
+
+<section class="bgv">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Teljesítményoptimalizálás</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">A folyamatos karbantartás biztosítja, hogy a webhelyed gyorsan és hatékonyan működjön.
+             Ez magában foglalja az oldal betöltési idő optimalizálását, törött linkek kijavítását és teljesítményproblémák kezelését. </p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M20 13C20 15.2091 19.1046 17.2091 17.6569 18.6569L19.0711 20.0711C20.8807 18.2614 22 15.7614 22 13 22 7.47715 17.5228 3 12 3 6.47715 3 2 7.47715 2 13 2 15.7614 3.11929 18.2614 4.92893 20.0711L6.34315 18.6569C4.89543 17.2091 4 15.2091 4 13 4 8.58172 7.58172 5 12 5 16.4183 5 20 8.58172 20 13ZM15.293 8.29297 10.5 12.5 12.5 14.5 16.7072 9.70718 15.293 8.29297Z"></path></svg>
+          
+         
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+
+<!--content -->
+
+
+<section class="bg_portfolio">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Tartalomfrissítés</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">
+            Új és releváns tartalom hozzáadása frissítések vagy blogbejegyzések révén naprakészen tartja a
+             webhelyedet és érdekessé teszi a látogatók számára. A friss tartalom jelzi a keresőmotorok számára is, hogy a webhelyed aktív és releváns. 
+          </p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M5.46257 4.43262C7.21556 2.91688 9.5007 2 12 2C17.5228 2 22 6.47715 22 12C22 14.1361 21.3302 16.1158 20.1892 17.7406L17 12H20C20 7.58172 16.4183 4 12 4C9.84982 4 7.89777 4.84827 6.46023 6.22842L5.46257 4.43262ZM18.5374 19.5674C16.7844 21.0831 14.4993 22 12 22C6.47715 22 2 17.5228 2 12C2 9.86386 2.66979 7.88416 3.8108 6.25944L7 12H4C4 16.4183 7.58172 20 12 20C14.1502 20 16.1022 19.1517 17.5398 17.7716L18.5374 19.5674Z"></path></svg>
+         
+         
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+
+
+<!--content -->
+
+
+<section class="bgv">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Mentés és katasztrófa-helyreállítás</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">A rendszeres biztonsági mentések elengedhetetlenek az adatvesztés és a webhely-összeomlás elleni védelemben. 
+           Probléma vagy kibertámadás esetén a friss biztonsági mentés gyorsabb helyreállítást tesz lehetővé. </p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0" viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)" d="M12 12.5858L16.2426 16.8284L14.8284 18.2426L13 16.415V22H11V16.413L9.17157 18.2426L7.75736 16.8284L12 12.5858ZM12 2C15.5934 2 18.5544 4.70761 18.9541 8.19395C21.2858 8.83154 23 10.9656 23 13.5C23 16.3688 20.8036 18.7246 18.0006 18.9776L18.0009 16.9644C19.6966 16.7214 21 15.2629 21 13.5C21 11.567 19.433 10 17.5 10C17.2912 10 17.0867 10.0183 16.8887 10.054C16.9616 9.7142 17 9.36158 17 9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9C7 9.36158 7.03838 9.7142 7.11205 10.0533C6.91331 10.0183 6.70879 10 6.5 10C4.567 10 3 11.567 3 13.5C3 15.2003 4.21241 16.6174 5.81986 16.934L6.00005 16.9646L6.00039 18.9776C3.19696 18.7252 1 16.3692 1 13.5C1 10.9656 2.71424 8.83154 5.04648 8.19411C5.44561 4.70761 8.40661 2 12 2Z"></path></svg>
+          
+         
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+
+<!--content -->
+
+
+<section class="bg_testamonials">
+    <!-- Container -->
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32 text-gray-200">
+      <!-- Component -->
+      <div class="flex flex-col-reverse items-start gap-8 sm:gap-20 lg:flex-row lg:justify-between lg:items-center ">
+        <div class="lg:w-1/2">
+          <h2 class="mb-4 max-w-3xl text-3xl font-bold md:text-5xl text-orange-500">Ügyfél bizalom</h2>
+          <p class="mb-6 max-w-lg text-sm  sm:text-base md:mb-10 lg:mb-12">Jól karbantartott webhely szakmaiságot és megbízhatóságot tükröz.
+             A vásárlók nagyobb valószínűséggel fognak egy olyan vállalkozásban bízni, amelynek weboldala naprakész, működőképes és biztonságos. </p>
+            <!-- <a href="#" class="inline-block bg-black px-6 py-3 font-semibold text-white">Get started</a> -->
+          </div>
+          <svg class="max-w-[120px] sm:max-w-[160px] mx-auto  lg:max-w-xs lg:m-0"  viewBox="0 0 24 24"><path fill="rgb(232, 123, 53)"  d="M17.841 15.659L18.017 15.836L18.1945 15.659C19.0732 14.7803 20.4978 14.7803 21.3765 15.659C22.2552 16.5377 22.2552 17.9623 21.3765 18.841L18.0178 22.1997L14.659 18.841C13.7803 17.9623 13.7803 16.5377 14.659 15.659C15.5377 14.7803 16.9623 14.7803 17.841 15.659ZM12 14V16C8.68629 16 6 18.6863 6 22H4C4 17.6651 7.44784 14.1355 11.7508 14.0038L12 14ZM12 1C15.315 1 18 3.685 18 7C18 10.2397 15.4357 12.8776 12.225 12.9959L12 13C8.685 13 6 10.315 6 7C6 3.76034 8.56434 1.12237 11.775 1.00414L12 1ZM12 3C9.78957 3 8 4.78957 8 7C8 9.21043 9.78957 11 12 11C14.2104 11 16 9.21043 16 7C16 4.78957 14.2104 3 12 3Z"></path></svg>
+          
+         
+          <!-- <div class="lg:w-1/2">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940836e6cf8d_Group%2047854%20(2).svg" alt="" />
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+<!--content -->
+
+
+
+
+
+<!-- footer -->
+    
+<footer class="block bg_portfolio">
+    <!-- Container -->
+    <div class="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10 text-gray-200"><!-- Component -->
+      <div class="flex-col flex items-center">
+        <a href="#" class="mb-8 inline-block max-w-full text-black">
+          <img src="/images/logo.png" alt="" class="inline-block max-h-24">
+        </a>
+        <div class="text-center font-semibold max-[991px]: max-[991px]:py-1">
+          <a href="services.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Szolgáltatásaim</a>
+          <a href="about.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Rólam</a>
+          <a href="portfolio.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Portfólió</a>
+          <a href="contact.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Kapcsolat</a>
+          <!-- <a href="#" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Help</a> -->
+        </div>
+        <div class="mb-8 mt-8 border-b border-orange-500 w-48">
+        </div>
+        <div class="mb-12 flex justify-center w-full max-w-[208px] gap-4">
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/facebook-circle-fill.png" alt="" class="inline-block">
+          </a>
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/linkedin-box-line.png" alt="" class="inline-block">
+          </a>
+
+          
+          
+        </div>
+        <p class="max-[479px]:text-sm" id="footer_year">.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- footer -->
+
+
+
+</body>
+</html>
