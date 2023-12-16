@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Siker</title>
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
-    form recived thanks
+    
+<!-- nav -->
+    
+<section>
+    <div class="h-auto w-screen fixed jet text-gray-200 z-10 ">
+      <!-- NAVBAR -->
+      <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
+        <!-- CONTAINER -->
+        <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
+          <!-- SVG LOGO - YOU CAN REPLACE THIS -->
+          <div class="flex items-center">
+              <a href="index.html">
+                  <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
+              </a>
+  
+              <button id="menuBtn" class="absolute right-5 lg:hidden" >
+                  <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
+                      <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                  </svg>
+              </button>
+  
+          </div>
+          <!-- MENU CONTENT 1 -->
+          <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
+                    pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                    lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
+            <!-- DRopdown div -->
+            <div class="relative flex group">
+              <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500 " >Szolgáltatásaim
+              </a>
+              <!-- DROP DOWN MENU ONE -->
+                    <div class="hidden lg:group-hover:block min-w-[200px]  jet flex-col rounded-lg  lg:absolute lg:top-12  items-end " >
+                      
+                      <a class="flex grow flex-col  rounded-lg px-5 py-4  lg:basis-[248px] " href="webdevelopment.html">
+                        
+                        <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Webfejlesztés</p>
+                      </a>
+  
+                      <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px] " href="seo.html">
+                        <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">SEO</p>
+                      </a>
+                      
+                      <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="digitalMarketing.html">
+                        <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Digitális Marketing</p>
+                      </a>
+                      <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="websiteMaintanance.html">
+                        <p class="  text-sm text-gray-200 hover:text-orange-500 ">Weboldal karbantatás</p>
+                      </a>
+                      <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="customPhp.html">
+                        <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Egyedi fejlesztés</p>
+                      </a>
+                    </div>
+                    </div>
+            <!-- DROP DOWN MENU END -->
+  
+            <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
+            <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
+            <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
+            <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
+          </div>
+          <!-- MENU CONTENT 2 -->
+          <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
+            <a href="contact.html">Ajánlatot kérek</a>
+          </div>
+          <!-- BURGER MENU -->
+          <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
+            <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
+                <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+            </svg>
+        </button> -->
+        </div>
+      </nav>
+  
+  
+  
+  
+    </div>
+  </section>
+  
+  
+  
+  <!-- nav -->
+
+
+
+
+  <!-- footer -->
+    
+  <footer class="block bg_portfolio">
+    <!-- Container -->
+    <div class="py-16 md:py-24 lg:py-32 mx-auto w-full max-w-7xl px-5 md:px-10 text-gray-200"><!-- Component -->
+      <div class="flex-col flex items-center">
+        <a href="#" class="mb-8 inline-block max-w-full text-black">
+          <img src="/images/logo.png" alt="" class="inline-block max-h-24">
+        </a>
+        <div class="text-center font-semibold max-[991px]: max-[991px]:py-1">
+          <a href="services.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Szolgáltatásaim</a>
+          <a href="about.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Rólam</a>
+          <a href="portfolio.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Portfólió</a>
+          <a href="contact.html" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Kapcsolat</a>
+          <!-- <a href="#" class="inline-block px-6 py-2 font-normal text-gray-200 transition hover:text-orange-500">Help</a> -->
+        </div>
+        <div class="mb-8 mt-8 border-b border-orange-500 w-48">
+        </div>
+        <div class="mb-12 flex justify-center w-full max-w-[208px] gap-4">
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/facebook-circle-fill.png" alt="" class="inline-block">
+          </a>
+          <a href="#" class=" flex-col flex max-w-[24px] items-center justify-center text-black hover:border-b border-orange-500">
+            <img src="/images/linkedin-box-line.png" alt="" class="inline-block">
+          </a>
+
+          
+          
+        </div>
+        <p class="text-orange-500" >+36303888629</p>
+        <p class="text-orange-500 mb-4">daniel@danielvarjaskeri.com</p>
+        <p class="max-[479px]:text-sm" id="footer_year">.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- footer -->
+
+
+
 </body>
 </html>
