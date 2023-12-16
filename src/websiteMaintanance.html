@@ -12,107 +12,85 @@
 
      <!-- nav -->
     
-  <section>
-    <div class="h-auto w-screen fixed jet text-gray-200 z-10 ">
-      <!-- NAVBAR -->
-      <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
-        <!-- CONTAINER -->
-        <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
-          <!-- SVG LOGO - YOU CAN REPLACE THIS -->
-          <div class="flex items-center">
-              <a href="index.html">
-                  <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
-              </a>
+    <section>
+      <div class="h-auto w-screen fixed jet text-gray-200 z-10 ">
+        <!-- NAVBAR -->
+        <nav class="font-inter mx-auto h-auto w-full max-w-[1600px] lg:relative lg:top-0">
+          <!-- CONTAINER -->
+          <div class="flex flex-col  j px-0 pt-2  pb-2 lg:h-auto lg:flex-row lg:items-center lg:justify-between lg:px-10 lg:py-0 xl:px-20">
+            <!-- SVG LOGO - YOU CAN REPLACE THIS -->
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img class="w-20 h-auto hover:animate-pulse" src="/images/logo.png" alt="">
+                </a>
+    
+                <button id="menuBtn" class="absolute right-5 lg:hidden" >
+                    <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
+                        <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                    </svg>
+                </button>
   
-              <button id="menuBtn" class="absolute right-5 lg:hidden" >
-                  <svg width=30 height=30 viewBox="0 0 24 24" class="hover:animate-pulse">
-                      <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
-                  </svg>
-              </button>
-
-          </div>
-          <!-- MENU CONTENT 1 -->
-          <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
-                    pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
-                    lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
-            <!-- DRopdown div -->
-            <div class="relative flex flex-col ">
-              <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500" >Szolgáltatásaim
-              </a>
-              <!-- DROP DOWN MENU ONE -->
-                    <div class="hidden lg:px-75 z-50  w-full flex-col rounded-lg bg-white px-5 py-5 lg:absolute lg:top-20 lg:w-[800px] lg:flex-row lg:flex-wrap lg:py-7 lg:shadow-[0_16px_64px_-15px_rgba(45,96,173,0.15)] xl:w-[950px]" >
-                        <!-- ITEM -->
-                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
-                        <!-- ICON -->
-                        <div class="relative">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" fill="#C4C4C4" />
-                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
-                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
-                            </svg>
-                        </div>
-                        <!-- TEXT -->
-                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Analytics</h2>
-                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Get a better understanding of where your traffic is coming from</p>
+            </div>
+            <!-- MENU CONTENT 1 -->
+            <div id="menuContent" class="jet hidden lg:bg-inherit  flex-col items-center w-screen grow
+                      pt-12 space-y-8 lg:grow-0 lg:h-auto lg:pt-0 lg:w-auto lg:mt-0 lg:flex 
+                      lg:flex-row lg:relative lg:space-x-1 lg:space-y-0" >
+              <!-- DRopdown div -->
+              <div class="relative flex group">
+                <a  href="services.html" class="flex flex-row rounded-lg lg:px-6 lg:py-4   hover:text-orange-500 " >Szolgáltatásaim
+                </a>
+                <!-- DROP DOWN MENU ONE -->
+                      <div class="hidden lg:group-hover:block min-w-[200px]  jet flex-col rounded-lg  lg:absolute lg:top-12  items-end " >
+                        
+                        <a class="flex grow flex-col  rounded-lg px-5 py-4  lg:basis-[248px] " href="webdevelopment.html">
+                          
+                          <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Webfejlesztés</p>
                         </a>
-                        <!-- ITEM -->
-                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
-                        <!-- ICON -->
-                        <div class="relative">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" fill="#C4C4C4" />
-                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
-                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
-                            </svg>
-                        </div>
-                        <!-- TEXT -->
-                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Engagement</h2>
-                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Speak directly to your customers in a more meaningful way</p>
+
+                        <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px] " href="seo.html">
+                          <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">SEO</p>
                         </a>
-                        <!-- ITEM -->
-                        <a class="flex grow flex-col rounded-lg px-5 py-5 hover:bg-gray-50 lg:basis-[248px] xl:px-8" href="#">
-                        <!-- ICON -->
-                        <div class="relative">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" fill="#C4C4C4" />
-                            <path d="M18.4688 18.6875C18.8312 18.6875 19.125 18.3937 19.125 18.0312C19.125 17.6688 18.8312 17.375 18.4688 17.375C18.1063 17.375 17.8125 17.6688 17.8125 18.0312C17.8125 18.3937 18.1063 18.6875 18.4688 18.6875Z" fill="black" />
-                            <path d="M24.3751 14.75H15.6251C15.3931 14.7503 15.1707 14.8425 15.0066 15.0066C14.8426 15.1706 14.7503 15.393 14.7501 15.625V22.6236L14.75 22.6253L14.7501 24.375C14.7503 24.607 14.8426 24.8294 15.0066 24.9934C15.1707 25.1575 15.3931 25.2497 15.6251 25.25H24.3751C24.607 25.2497 24.8294 25.1575 24.9935 24.9934C25.1575 24.8294 25.2498 24.607 25.2501 24.375V15.625C25.2498 15.393 25.1575 15.1706 24.9935 15.0066C24.8294 14.8425 24.607 14.7503 24.3751 14.75ZM22.8063 19.125C22.642 18.9612 22.4195 18.8691 22.1875 18.8691C21.9555 18.8691 21.733 18.9612 21.5688 19.125L19.1251 21.5688L17.9938 20.4375C17.8295 20.2737 17.607 20.1817 17.375 20.1817C17.1431 20.1817 16.9205 20.2737 16.7563 20.4375L15.6251 21.5687V15.625H24.3751L24.3754 20.6941L22.8063 19.125Z" fill="black" />
-                            </svg>
-                        </div>
-                        <!-- TEXT -->
-                        <h2 class="font-inter mb-1 mt-5 text-lg font-medium text-[#160042]">Automations</h2>
-                        <p class="font-inter max-w-[250px] text-sm text-gray-500 lg:max-w-[400px]">Build strategic funnels that will drive your customers to convert</p>
+                        
+                        <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="digitalMarketing.html">
+                          <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Digitális Marketing</p>
                         </a>
-                    </div>
-                    </div>
-            <!-- DROP DOWN MENU END -->
-            <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
-            <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
-            <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
-            <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
+                        <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="websiteMaintanance.html">
+                          <p class="  text-sm text-gray-200 hover:text-orange-500 ">Weboldal karbantatás</p>
+                        </a>
+                        <a class="flex grow flex-col rounded-lg px-5 py-4    lg:basis-[248px]" href="customPhp.html">
+                          <p class=" max-w-[250px] text-sm text-gray-200 hover:text-orange-500 lg:max-w-[400px]">Egyedi fejlesztés</p>
+                        </a>
+                      </div>
+                      </div>
+              <!-- DROP DOWN MENU END -->
+
+              <a href="about.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Rólam</a>
+              <a href="portfolio.html" class="font-inter rounded-lg lg:px-6 lg:py-4 hover:text-orange-500">Portfolió</a>
+              <a href="contact.html" class="font-inter lg: rounded-lg  lg:px-6 lg:py-4 hover:text-orange-500">Kapcsolat</a>
+              <button id="menuCloseBtn" class="lg:hidden text-orange-500 text-2xl">X</button>
+            </div>
+            <!-- MENU CONTENT 2 -->
+            <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
+              <a href="contact.html">Ajánlatot kérek</a>
+            </div>
+            <!-- BURGER MENU -->
+            <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
+              <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
+                  <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+              </svg>
+          </button> -->
           </div>
-          <!-- MENU CONTENT 2 -->
-          <div class="lg:block bg-orange-500 border-2 border-orange-500 px-6 py-3 hidden text-white rounded-md  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange" >
-            <a href="contact.html">Ajánlatot kérek</a>
-          </div>
-          <!-- BURGER MENU -->
-          <!-- <button on:click={toggleMenu} class="absolute right-5 lg:hidden" >
-            <svg width=24 height=24 viewBox="0 0 24 24" class="hover:animate-pulse">
-                <path fill="rgb(232, 123, 53)" d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
-            </svg>
-        </button> -->
-        </div>
-      </nav>
-
-
-
-
-    </div>
-  </section>
-
-
-
-<!-- nav -->
+        </nav>
+  
+  
+  
+  
+      </div>
+    </section>
+  
+  
+  
+  <!-- nav -->
 
 
 
